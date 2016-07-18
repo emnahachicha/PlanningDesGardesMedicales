@@ -38,7 +38,7 @@ public class Service {
 		}
 		return docteurs;
 	}
-	// fonction pour gerer la disponibilié dans Disponibilite
+	// fonction pour gerer la disponibiliÃ© dans Disponibilite
 
 	public static ArrayList<Docteur> gererDisponiblite(JTable table, HashMap<String, PrefEnum> preference) {
 
@@ -53,7 +53,7 @@ public class Service {
 		plan.setNomPlanning(nom);
 	}
 
-	// fonction pour supprimer disponibilité
+	// fonction pour supprimer disponibilitï¿½
 	public static void deletedisponiblity(Object[] row) {
 		preference.remove(row);
 	}

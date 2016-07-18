@@ -38,7 +38,7 @@ public class Disponibilite extends JFrame {
 	public Disponibilite() {
 
 		// setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		this.setTitle("Disponibilité");
+		this.setTitle("Disponibilitï¿½");
 		setBounds(100, 100, 600, 600);
 		contentPane = new JPanel();
 		contentPane.setBackground(new Color(176, 224, 230));
@@ -72,18 +72,18 @@ public class Disponibilite extends JFrame {
 		rbNotDispo.setBounds(331, 149, 95, 23);
 		contentPane.add(rbNotDispo);
 
-		// table (affichage de disponibilité)
+		// table (affichage de disponibilitï¿½)
 
 		Object[][] data = null;
 
-		String[] colomname = { "Date", "Disponibilité" };
+		String[] colomname = { "Date", "Disponibilitï¿½" };
 		 DefaultTableModel model = new DefaultTableModel(data, colomname);
 		JTable table1 = new JTable(model);
 		table1.setBackground(UIManager.getColor("EditorPane.selectionBackground"));
 		table1.setForeground(Color.black);
 		table1.setRowHeight(30);
 
-		// Affichage des données existantes
+		// Affichage des donnï¿½es existantes
 		HashMap<String, PrefEnum> tmpPref = Service.docteurs.get(MembresDeGarde.table.getSelectedRow()).getPreference();
 
 		for (Entry<String, PrefEnum> entry : tmpPref.entrySet()) {
@@ -133,14 +133,14 @@ public class Disponibilite extends JFrame {
 											+ " et le "
 											+ (String.format("%1$td/%1$tm/%1$tY",
 													AjouterPlanning.dateF.getDate().getTime()))
-							+ " \n \n                  Svp réssayez", "Erreur", JOptionPane.ERROR_MESSAGE);
+							+ " \n \n                  Svp rï¿½ssayez", "Erreur", JOptionPane.ERROR_MESSAGE);
 				}
 
 				else {
 					if ((!rbDispoBut.isSelected()) && (!rbNotDispo.isSelected())) {
 
 						JOptionPane.showMessageDialog(btnAjouter,
-								"Un ou plusieurs champs sont vide\n \n                  Svp réssayez", "Erreur",
+								"Un ou plusieurs champs sont vide\n \n                  Svp rï¿½ssayez", "Erreur",
 								JOptionPane.ERROR_MESSAGE);
 
 					}
@@ -181,7 +181,7 @@ public class Disponibilite extends JFrame {
 				int indice = table1.getSelectedRow();
 				if (indice >= 0) {
 					model.removeRow(indice);
-					// fonction pour supprimer disponibilité
+					// fonction pour supprimer disponibilitï¿½
 					Service.deletedisponiblity(row);
 				} else {
 					System.out.println("Delete Error");

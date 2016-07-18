@@ -11,7 +11,7 @@ import javax.swing.JTable;
 
 import com.sifast.stage.ihm.Disponibilite;
 
-public class AfficherDisponibilité extends DefaultCellEditor {
+public class AfficherDisponibilitÃ© extends DefaultCellEditor {
 
 	private static final long serialVersionUID = 1L;
 
@@ -19,7 +19,7 @@ public class AfficherDisponibilité extends DefaultCellEditor {
 	private String label;
 	private boolean isPushed;
 
-	public AfficherDisponibilité(JCheckBox checkBox) {
+	public AfficherDisponibilitÃ©(JCheckBox checkBox) {
 		super(checkBox);
 		button = new JButton();
 		button.setOpaque(true);
@@ -40,7 +40,7 @@ public class AfficherDisponibilité extends DefaultCellEditor {
 			button.setForeground(table1.getForeground());
 			button.setBackground(table1.getBackground());
 		}
-		label = (value == null) ? "afficher disponibilité" : value.toString();
+		label = (value == null) ? "afficher disponibilitï¿½" : value.toString();
 		button.setText(label);
 		isPushed = true;
 		return button;

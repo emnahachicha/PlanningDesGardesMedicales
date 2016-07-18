@@ -34,8 +34,7 @@ public class MembresDeGarde extends JFrame {
 	public static ArrayList<Object> dates = new ArrayList<Object>();
 	public static JTable table;
 	public static Service service;
-	
-	
+
 	public MembresDeGarde() {
 
 		service = new Service();
@@ -68,7 +67,7 @@ public class MembresDeGarde extends JFrame {
 		// table
 
 		Object[][] data = null;
-		String[] colomname = { "membre", "Disponibilité" };
+		String[] colomname = { "membre", "Disponibilitï¿½" };
 		DefaultTableModel model = new DefaultTableModel(data, colomname);
 		table = new JTable(model);
 
@@ -99,8 +98,8 @@ public class MembresDeGarde extends JFrame {
 				// docteurs.add(docteur);
 				service.createDoctor();
 
-				AfficherDisponibilité bt = new AfficherDisponibilité(new JCheckBox());
-				// mettre le bouton saisir disponibilité à la 2 eme colonne du tableau model
+				AfficherDisponibilitÃ© bt = new AfficherDisponibilitÃ©(new JCheckBox());
+				// mettre le bouton saisir disponibilitï¿½ ï¿½ la 2 eme colonne du tableau model
 				TableColumn dispoColumn = table.getColumnModel().getColumn(1);
             	dispoColumn.setCellRenderer(new AfficherBouton());
 				dispoColumn.setCellEditor(bt);
@@ -151,15 +150,15 @@ public class MembresDeGarde extends JFrame {
 		
 					calendar.add(Calendar.DATE, 1);
 					dates.add(String.format("%1$td/%1$tm/%1$tY", calendar));
-//					calendar=Calendar.getInstance();
+			calendar=Calendar.getInstance();
 			}
 				if (table.getValueAt(0, 0) == null)
 					JOptionPane.showMessageDialog(null,
-							"Ajouter au moins un membre \n \n                  Svp réssayez", "Erreur",
+							"Ajouter au moins un membre \n \n                  Svp rï¿½ssayez", "Erreur",
 							JOptionPane.ERROR_MESSAGE);
 				else {
 
-					// ajout des docteurs dans une liste docteurs
+					 //ajout des docteurs dans une liste docteurs
 					// for (int i = 0; i < table.getRowCount(); i++) {
 					// docteurs.get(i).setNom(table.getValueAt(i,0).toString());
 					// }

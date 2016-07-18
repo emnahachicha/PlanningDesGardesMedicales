@@ -23,7 +23,7 @@ public class AfficherBouton extends JButton implements TableCellRenderer {
 			setForeground(table.getForeground());
 			setBackground(UIManager.getColor("Button.background"));
 		}
-		setText((value == null) ? "saisir disponibilité" : value.toString());
+		setText((value == null) ? "saisir disponibilitÃ©" : value.toString());
 		return this;
 
 	}

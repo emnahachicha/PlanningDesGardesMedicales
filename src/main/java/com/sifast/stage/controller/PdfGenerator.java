@@ -88,17 +88,17 @@ public class PdfGenerator {
 
 			// TODO use relative path instead of absolut path
 			if ((new File(
-					"F:\\work\\projects\\PlanningDesGardesMedicales\\planning.pdf"))
+					"C:\\Stage\\PlanningDesGardesMedicales\\planning.pdf"))
 					.exists()) {
 
 				Process p = Runtime
 						.getRuntime()
-						.exec("rundll32 url.dll,FileProtocolHandler F:\\work\\projects\\PlanningDesGardesMedicales\\planning.pdf");
+						.exec("rundll32 url.dll,FileProtocolHandler C:\\Stage\\PlanningDesGardesMedicales\\planning.pdf");
 				p.waitFor();
 
 			} 
 			
-			System.out.println("Le Planning a été crée avec succès");
+			System.out.println("Le Planning a ï¿½tï¿½ crï¿½e avec succï¿½s");
 			document.close();
 
 		} catch (Exception ex) {
@@ -109,3 +109,4 @@ public class PdfGenerator {
 	}
 
 }
+
