@@ -146,7 +146,7 @@ public class MembresDeGarde extends JFrame {
 				Calendar calMax = Calendar.getInstance();
 				calMax.setTime(Service.plan.getDateFin().getDate());
 				dates.add(String.format("%1$td/%1$tm/%1$tY", calendar));
-			while (!(String.format("%1$td/%1$tm/%1$tY", calendar).equals(String.format("%1$td/%1$tm/%1$tY", calMax)))) {
+			while ((String.format("%1$td/%1$tm/%1$tY", calendar).equals(String.format("%1$td/%1$tm/%1$tY", calMax)))) {
 		
 					calendar.add(Calendar.DATE, 1);
 					dates.add(String.format("%1$td/%1$tm/%1$tY", calendar));
