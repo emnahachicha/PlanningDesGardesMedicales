@@ -126,7 +126,7 @@ public class AjouterPlanning extends JFrame {
 				System.out.println(dateFin1_int);
 
 				if ((textField.getText().isEmpty()) || (dateDebut1==null) || (dateF.getDate()==null)) {
-					JOptionPane.showMessageDialog(null, "Un ou plusieurs champs sont vide\n \n                  Svp réssayez", "Erreur",
+					JOptionPane.showMessageDialog(null, "Un ou plusieurs champs sont vide\n \n                  Svp rÃ©ssayez", "Erreur",
 							JOptionPane.ERROR_MESSAGE);
 
 				}
@@ -134,7 +134,7 @@ public class AjouterPlanning extends JFrame {
 				else{
 					
 					if (dateDebut1.equals(dateFin1)){
-				JOptionPane.showMessageDialog(butAjouter, "La date de debut doit etre differente de la date de fin\n \n                  Svp réssayez", "Erreur",
+				JOptionPane.showMessageDialog(butAjouter, "La date de debut doit etre differente de la date de fin\n \n                  Svp rÃ©ssayez", "Erreur",
 						JOptionPane.ERROR_MESSAGE);	}
 				else{
 					
@@ -156,7 +156,7 @@ public class AjouterPlanning extends JFrame {
 					}
 			
 				    else {
-					JOptionPane.showMessageDialog(null, "La date de fin doit etre situé aprés la date début\n \n                  Svp réssayez", "Erreur",
+					JOptionPane.showMessageDialog(null, "La date de fin doit etre situÃ©e aprÃ©s la date dÃ©but\n \n                  Svp rÃ©ssayez", "Erreur",
 							JOptionPane.ERROR_MESSAGE);
 
 				}   }       

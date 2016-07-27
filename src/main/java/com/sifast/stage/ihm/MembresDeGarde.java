@@ -67,7 +67,7 @@ public class MembresDeGarde extends JFrame {
 		// table
 
 		Object[][] data = null;
-		String[] colomname = { "membre", "Disponibilit�" };
+		String[] colomname = { "membre", "Disponibilité" };
 		DefaultTableModel model = new DefaultTableModel(data, colomname);
 		table = new JTable(model);
 
